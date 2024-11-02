@@ -1,0 +1,130 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  padding-bottom: 9px;
+
+  @include media("<=tablet") {
+    background-color: $white;
+    flex-direction: column;
+    margin-block-start: 0;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 2.57rem;
+    border: 1px solid;
+  }
+
+  & > &__item {
+    @include first(1) {
+      button {
+        padding-left: 0;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding-right: 2rem;
+
+        @include media(">tablet") {
+          border-right: 3px solid $midnight-blue;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    &__title {
+      // color: $text-tertiary;
+
+      &:hover {
+        color: $text-secondary;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include media("<=tablet") {
+      width: 100%;
+    }
+
+    & > button {
+      border: 0;
+      width: 100%;
+      display: flex;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-weight: 500;
+      align-items: center;
+      background: transparent;
+      padding: 0.5rem;
+      justify-content: space-between;
+    }
+
+    .dropdown {
+      left: 0;
+      top: 100%;
+      z-index: 2;
+      min-width: 15rem;
+      padding: 0.5rem 0;
+      position: absolute;
+      background-color: $white;
+      box-shadow: $ligt-shadow;
+
+      @include media("<=tablet") {
+        position: static;
+        box-shadow: none;
+        border: 1px solid;
+        margin: 0.5rem;
+      }
+
+      &--state-submenu {
+        top: 0;
+        left: 100%;
+      }
+    }
+  }
+}
+
+.MuiContainer-root {
+  &:has(.menu) {
+    @include media("<=tablet") {
+      position: fixed;
+      inset: 0;
+      background: white;
+      z-index: 99;
+    }
+
+    svg[data-testid="CloseIcon"] {
+      @include media(">tablet") {
+        display: none;
+      }
+
+      @include media("<=tablet") {
+        position: absolute;
+        cursor: pointer;
+        top: 1%;
+        right: 4%;
+      }
+    }
+  }
+}
+
+.menu-wrapper {
+  .MuiTabPanel-root {
+    padding: 0 !important;
+  }
+
+  &__titles {
+    .MuiButtonBase-root {
+      font-size: 1rem !important;
+    }
+  }
+}

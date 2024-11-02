@@ -1,0 +1,53 @@
+.register-document {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  &__header {
+  }
+
+  &__content {
+  }
+
+  &__fields {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+
+    & > div {
+      @include from-first(1) {
+        flex: 2;
+      }
+
+      @include all-but(1) {
+        flex: 1;
+      }
+    }
+
+    .MuiFormControl-root {
+      min-width: 200px;
+    }
+  }
+
+  &__button {
+    &--state-search {
+    }
+  }
+
+  &__content-buttons {
+    margin: 2rem 0;
+  }
+
+  &__footer {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+
+  .MuiPagination-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

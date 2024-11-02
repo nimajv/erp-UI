@@ -1,0 +1,75 @@
+.report {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  overflow: hidden;
+  max-height: 1500px;
+  margin-bottom: 4rem;
+
+  &__tabs {
+    flex: 1;
+    align-self: stretch;
+
+    .MuiSvgIcon-root {
+      font-size: 2rem;
+    }
+
+    .snapp-card {
+      height: 100%;
+      overflow-y: auto;
+      @include scrollbars(0.2rem, $mid-gray);
+
+      &__header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      &__content {
+        padding: 0;
+
+        .MuiTabs-scroller {
+          overflow-x: auto !important;
+          @include scrollbars(0.2rem, $mid-gray);
+        }
+
+        .MuiTabs-root {
+          @include media("<=tablet") {
+            min-height: none !important;
+          }
+        }
+
+        .MuiButtonBase-root {
+          font-size: 1rem;
+          align-items: center;
+          padding: 0.35rem 1rem;
+          min-height: 100% !important;
+          justify-content: space-between;
+          border-bottom: 1px solid $border-default;
+
+          @include media("<=desktop") {
+            border-bottom: none;
+            padding: 0.6rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__items {
+    flex: 4;
+    align-self: stretch;
+
+    .snapp-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      &__content {
+        flex: auto;
+        padding: 1rem;
+      }
+    }
+  }
+}

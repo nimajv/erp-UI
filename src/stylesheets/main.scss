@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+@import "vendors/normalize";
+@import "vendors/family";
+@import "vendors/mq";
+
+// 3. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+// dashboard layout
+@import "../layouts/DashboardLayout/Dashboard";
+@import "../layouts/DashboardLayout/Header/header";
+@import "../layouts/DashboardLayout/Menu/dashboardMenu";
+
+// 5. Components
+@import "../components/common/List/list";
+@import "../components/common/Button/button";
+@import "../components/common/SnappCard/card";
+@import "../components/common/Tooltip/tooltip";
+@import "../components/common/Fields/DatePickerField/datePickerField";
+
+@import "../components/ui/Cards/ProfileHome/FavMenu/favMenu";
+@import "../components/ui/Papers/ProfileHome/AddService/addService";
+@import "../components/ui/Papers/ProfileHome/HomeService/homeService";
+@import "../components/ui/Modals/ProfileHome/ChooseCompany/chooseCompany";
+@import "../components/ui/SuccessMessages/PostDocumentSuccess/postDocumentSuccess";
+@import "../components/ui/SuccessMessages/SendDocumentSuccess/sendDocumentSuccess";
+@import "../components/ui/SuccessMessages/DeleteDocumentSuccess/deleteDocumentSuccess";
+
+//
+@import "../components/ui/FailMessages/PostDocumentFail/postDocumentFail";
+
+// 6. Page-specific styles
+@import "../features/auth/Login/login";
+@import "../features/profile/Report/report";
+@import "../features/profile/ProfileHome/profileHome";
+@import "../features/profile/DeleteDocument/deleteDocument";
+@import "../features/profile/RegisterDocument/registerDocument";
+
+// 7. Themes
+@import "themes/default";

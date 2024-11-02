@@ -1,0 +1,44 @@
+.MuiTooltip-tooltip.tooltip {
+    max-width: 350px;
+    font-size: 1rem;    
+
+    &--state-light {
+        background-color: $white;
+
+        .MuiTooltip-arrow {
+            color: $white;
+        }
+    }
+
+    &--state-error {
+        background-color: $danger400;
+
+        .MuiTooltip-arrow {
+            color: $danger400;
+        }
+    }
+
+    &--state-primary {
+        background-color: $info700;
+
+        .MuiTooltip-arrow {
+            color: $info700;
+        }
+    }
+
+    &--state-reset {
+        background-color: $white;
+
+        .MuiTooltip-arrow {
+            color: $white;
+        }
+    }
+
+    &--state-navy-blue {
+        background-color: $midnight-blue;
+
+        .MuiTooltip-arrow {
+            color: $midnight-blue;
+        }
+    }
+}

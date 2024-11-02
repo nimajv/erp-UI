@@ -1,0 +1,75 @@
+.login {
+  min-height: 100vh !important;
+  background-color: $info50;
+
+  &__images {
+    width: 100%;
+    display: flex;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+
+    img {
+      @include from-first(1) {
+        @include media("<=desktop") {
+          margin-top: 10%;
+          width: 50%;
+        }
+      }
+
+      @include from-first(2) {
+        @include media("<=desktop") {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      min-height: 2rem;
+      height: 100%;
+    }
+  }
+
+  .form {
+    padding: 2rem;
+    flex-basis: 50%;
+    align-self: center;
+
+    @include media("<=desktop") {
+      flex-basis: 100%;
+    }
+
+    h1.MuiTypography-root {
+      font-weight: bold;
+      color: $midnight-blue;
+      margin-bottom: 4rem;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      .MuiFormControl-root {
+        margin-bottom: 1rem;
+      }
+
+      .login__forget {
+        margin-top: 2rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .MuiPaper-root {
+    box-shadow: none;
+  }
+}

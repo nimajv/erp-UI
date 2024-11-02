@@ -1,0 +1,99 @@
+.profile-home-menus {
+  height: 100%;
+
+  & > .MuiContainer-root {
+    height: 100%;
+
+    & > .MuiPaper-root {
+      height: 100%;
+      background-color: $light-gray;
+    }
+  }
+
+  .close-btn {
+    top: 2vh;
+    left: 1vw;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fav-menu {
+  position: relative;
+  padding-top: 1rem;
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  &__items {
+    max-height: 150vh;
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include media("<=tablet") {
+      max-height: 100%;
+    }
+  }
+
+  &__button {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 1.25rem;
+    margin: 0;
+
+    .list-item {
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.4rem;
+      width: fit-content;
+      cursor: pointer;
+
+      &--state-has-child {
+        & > span {
+          border-left: 2px solid $border-secondary;
+          padding-left: 0.25rem;
+        }
+      }
+
+      &--state-is-active {
+        background-color: $midnight-blue;
+        border-radius: 0.5rem;
+
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  & > .MuiContainer-root {
+    & > .list {
+      margin-bottom: 2rem;
+
+      p {
+        font-size: 1rem;
+        padding-left: 0.25rem;
+        border-left: 2px solid $midnight-blue;
+        color: $dark;
+      }
+
+      & > ul {
+        & > .list-item {
+          font-size: 0.9rem;
+          color: $text-tertiary;
+        }
+      }
+    }
+  }
+}

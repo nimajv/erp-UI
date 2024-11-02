@@ -1,0 +1,51 @@
+{
+  "dashboard": {
+    "header": {
+      "search": "Search Service"
+    }
+  },
+  "common": {
+    "post": "Post",
+    "company": "Company",
+    "send": "Send",
+    "delete": "Delete",
+    "search": "Search",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "amount": "Amount",
+    "close": "Close",
+    "exit": "Exit",
+    "email": "Email",
+    "choose": "Choose",
+    "password": "Password",
+    "login": "Log In",
+    "forget": "Forgot password?",
+    "addToFavs": "add To Favs",
+    "username": "Username",
+    "download": "Download",
+    "excel": "Excel"
+  },
+  "registerDocumentPage": {
+    "header": "Register Document",
+    "content": {
+      "documentInfo": "Document Info",
+      "status": "Status"
+    },
+    "footer": {}
+  },
+  "deleteDocumentPage": {
+    "header": "Delete Document",
+    "content": {
+      "documentInfo": "Document Info",
+      "status": "Status"
+    },
+    "footer": {}
+  },
+  "loginPage": {
+    "Welcome": "Welcome to Snapp ERP"
+  },
+  "profileHomePage": {
+    "addFav": "Add Your Favorite Service",
+    "selectCompany": "Select Company"
+  }
+}

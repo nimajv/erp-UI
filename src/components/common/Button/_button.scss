@@ -1,0 +1,66 @@
+.MuiButton-root.MuiButton-contained.button {
+    color: $dark;
+    background-color: $info50;
+    text-transform: capitalize;
+    font-size: 1rem;
+
+    @include on-event {
+        background-color: $info100;
+    }
+
+    &--state-light {
+        background-color: $white;
+
+        @include on-event {
+            background-color: $info200;
+        }
+    }
+
+    &--state-primary {
+        color: $white;
+        background-color: $info700;
+
+        @include on-event {
+            background-color: $info800;
+        }
+    }
+
+    &--state-reset {
+        background-color: $white;
+
+        @include on-event {
+            background-color: $white;
+        }
+    }
+
+    &--state-navy-blue {
+        color: $white;
+        background-color: $midnight-blue;
+
+        @include on-event {
+            background-color: lighten($midnight-blue, 5);
+        }
+    }
+
+    &--state-error {
+        background-color: $danger400;
+
+        @include on-event {
+            background-color: $danger400;
+        }
+    }
+}
+
+.MuiButton-root.MuiButton-text.button {
+    text-transform: capitalize;
+    font-size: 1rem;
+
+    &--state-error {
+        color: $danger400;
+        background-color: lighten($danger50, 2);
+
+        @include on-event {
+            color: $danger500;
+        }
+    }
+}

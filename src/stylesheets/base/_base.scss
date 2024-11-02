@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+    box-sizing: border-box;
+    font-family: "Glory";
+    font-size: calc(10px + 0.33vw);
+
+    @include media("<=desktop") {
+        font-size: calc(10px + 0.75vw);
+    }
+
+    @include media("<=tablet") {
+        font-size: calc(7px + 2vw);
+    }
+}
+
+#root,
+body {
+    height: 100% !important;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+    color: $link-default;
+    text-decoration: none;
+
+    @include on-event {
+        text-decoration: underline;
+        color: $link-pressed;
+    }
+}
+
+div:where(.swal2-container) button:where(.swal2-close) {
+    @include on-event {
+        box-shadow: none !important;
+    }
+}
+
+div:where(.swal2-container).swal2-backdrop-show,
+div:where(.swal2-container).swal2-noanimation {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.pe-none {
+    pointer-events: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+}
+
+.table-row {
+    cursor: pointer;
+
+    &--state-disabled {
+        cursor: not-allowed;
+        background-color: $disabled !important;
+    }
+
+    &--state-primary {
+        cursor: not-allowed;
+        background-color: $primary100 !important;
+    }
+}
+
+.Toastify * {
+    font-size: 1.15rem;
+    font-family: "Glory";
+    font-style: italic;
+}
+
+.loading {
+    &-icon {
+        border: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-popup {
+        padding-bottom: 2rem;
+
+        .swal2-title {
+            padding-top: 0;
+            font-size: 1.5rem;
+            font-family: Gloary;
+            font-style: italic;
+        }
+    }
+}

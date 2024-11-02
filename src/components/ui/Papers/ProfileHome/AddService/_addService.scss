@@ -1,0 +1,28 @@
+.add-service {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+  border-radius: 1.5rem !important;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    svg {
+      font-size: 3rem;
+      color: $icon-secondary;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+  }
+}

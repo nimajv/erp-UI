@@ -1,0 +1,46 @@
+.insert-customer-data {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+  }
+  .divider {
+    margin: 30px 0;
+  }
+  &__content {
+  }
+  &__data {
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+      th {
+        color: #fff;
+        background-color: #103277;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      .status {
+        font-weight: bold;
+        color: green;
+        &.has-error {
+          color: red;
+        }
+      }
+    }
+  }
+}

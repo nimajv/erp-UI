@@ -1,0 +1,27 @@
+.send-document-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.9rem;
+  padding-bottom: 0.5rem;
+
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__log-number {
+    color: $success800;
+  }
+
+  &__icon {
+    color: $success800;
+    font-size: 4rem !important;
+  }
+
+  button {
+    text-transform: capitalize;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}

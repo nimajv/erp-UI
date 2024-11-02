@@ -1,0 +1,40 @@
+.list-component {
+  max-height: 60vh;
+  overflow: auto;
+  @include scrollbars(0.2rem, $mid-gray);
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    color: $text-primary;
+    font-size: 1.05rem;
+  }
+
+  .MuiListItem-root {
+    border-color: $border-default;
+  }
+
+  .MuiListItem-root {
+    @include fade-effect($midnight-blue, $info50);
+    cursor: pointer;
+
+    & > .MuiListItemText-root {
+      & > .MuiTypography-root {
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .item-component {
+    &--state-active {
+      background-color: $midnight-blue;
+      color: $white;
+
+      &:hover {
+        background-color: $midnight-blue;
+        color: $white;
+      }
+    }
+  }
+}

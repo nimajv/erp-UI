@@ -1,0 +1,43 @@
+.home-service {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  &__icon {
+    cursor: pointer;
+
+    svg {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none !important;
+
+    span {
+      @include from-first(1) {
+        font-size: 1rem;
+        color: $text-secondary;
+      }
+
+      @include from-first(2) {
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: $mid-gray;
+      }
+    }
+  }
+}
+
+.MuiPaper-root {
+  &:has(> .home-service) {
+    border-radius: 1.5rem !important;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 0;
+  }
+}

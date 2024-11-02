@@ -1,0 +1,132 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+/// colors
+$primary50: #e3f3ff;
+$primary100: #bbe0ff;
+$primary200: #8fcdff;
+$primary300: #5fbaff;
+$primary400: #36aaff;
+$primary500: #019bff;
+$primary600: #118dff;
+$primary700: #1679eb;
+$primary800: #1967d9;
+$primary900: #0149ac;
+
+$accent50: #fef3e1;
+$accent100: #fce0b4;
+$accent200: #fbcd84;
+$accent300: #fab953;
+$accent400: #f9a930;
+$accent500: #f89b17;
+$accent600: #f48f14;
+$accent700: #ee8011;
+$accent800: #e8710e;
+$accent900: #de580b;
+
+$success50: #e6f6ec;
+$success100: #c2e7cf;
+$success200: #9bd8b1;
+$success300: #70ca92;
+$success400: #4dbe7b;
+$success500: #22b364;
+$success600: #19a45a;
+$success700: #0c914d;
+$success800: #008042;
+$success900: #00612e;
+
+$warning50: #faf1df;
+$warning100: #f4dcb0;
+$warning200: #edc57e;
+$warning300: #e7ae4b;
+$warning400: #e29e26;
+$warning500: #df8e03;
+$warning600: #db8300;
+$warning700: #d57500;
+$warning800: #cf6600;
+$warning900: #c54f00;
+
+$danger50: #ffeaec;
+$danger100: #ffcacc;
+$danger200: #ef958f;
+$danger300: #e46b64;
+$danger400: #eb493d;
+$danger500: #ee381c;
+$danger600: #e02c1d;
+$danger700: #ce2018;
+$danger800: #c21710;
+$danger900: #b30000;
+
+$info50: #e0f4fd;
+$info100: #b2e3f9;
+$info200: #7fd0f4;
+$info300: #4ebeef;
+$info400: #2ab0ed;
+$info500: #04a3e9;
+$info600: #0295db;
+$info700: #0082c7;
+$info800: #0071b3;
+$info900: #005291;
+
+$white: #ffffff;
+$grey50: #f2f4f7;
+$mid-gray: #b9b9b9;
+$light-gray: #fcfcfc;
+$grey: #d2d5de;
+$disabled: #ebebe4;
+$dark: #1a1e29;
+$surface: #232938;
+$overlay: #333333;
+$midnight-blue: #002869;
+
+$text-info: #006190;
+$text-error: #b30000;
+$text-white: #ffffff;
+$text-success: #00612e;
+$text-warning: #de580b;
+$text-primary: #333333;
+$text-tertiary: #888888;
+$text-disabled: #bebebe;
+$text-secondary: #555555;
+
+$link-default: #118dff;
+$link-pressed: #1967d9;
+
+$border-dark: #bebebe;
+$border-hover: #0149ac;
+$border-default: #bebebe;
+$border-focused: #0149ac;
+$border-disabled: #bebebe;
+$border-secondary: #118dff;
+
+$icon-info: #0071b3;
+$icon-menus: #9098a7;
+$icon-danger: #c21710;
+$icon-success: #008042;
+$icon-warning: #cf6600;
+$icon-primary: #118dff;
+$icon-secondary: #555555;
+
+$ligt-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+  rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+
+$base-url: "../../static/";

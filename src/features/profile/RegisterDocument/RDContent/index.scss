@@ -1,0 +1,26 @@
+.register-document__fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .register-document__field-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .validation-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    white-space: nowrap; /* Prevent line breaks within error messages */
+  }
+  
+  .register-document__field-group > .validation-error {
+    display: block;
+    margin-top: 4px;
+  }
+  

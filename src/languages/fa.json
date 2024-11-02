@@ -1,0 +1,47 @@
+{
+  "dashboard": {
+    "header": {
+      "search": "Search Service"
+    }
+  },
+  "common": {
+    "post": "Post",
+    "send": "Send",
+    "search": "Search",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "amount": "Amount",
+    "close": "Close",
+    "exit": "Exit",
+    "email": "Email",
+    "password": "Password",
+    "login": "Log In",
+    "forget": "Forgot password?",
+    "snapp": "Snapp",
+    "snappBox": "Snapp Box",
+    "snappFood": "Snapp Food",
+    "snappTrip": "Snapp Trip",
+    "snappGrocery": "Snapp Grocery",
+    "snappMarketPro": "Snapp Market Pro",
+    "snappKitchen": "Snapp Kitchen",
+    "snappShop": "Snapp Shop",
+    "snappDoctor": "Snapp Doctor",
+    "snappSupply": "Snapp Supply",
+    "snappStore": "Snapp Store",
+    "snappPay": "Snapp Pay"
+  },
+  "registerDocumentPage": {
+    "header": "Register Document",
+    "content": {
+      "documentInfo": "Document Info"
+    },
+    "footer": {}
+  },
+  "loginPage": {
+    "Welcome": "Welcome to Snapp ERP"
+  },
+  "profileHomePage": {
+    "addFav": "Add Your Favorite Service",
+    "selectCompany": "Select Company"
+  }
+}

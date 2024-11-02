@@ -1,0 +1,28 @@
+.snapp-card {
+  border-radius: 0.25rem;
+
+  &__header {
+    color: $white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: $midnight-blue;
+    font-size: 1rem;
+    border-radius: 0.22rem 0.22rem 0 0;
+  }
+
+  &__content {
+    font-size: 0.9rem;
+    padding: 1.5rem 4.5rem;
+    background-color: $white;
+
+    @include media("<=tablet") {
+      padding: 2rem 1rem;
+    }
+  }
+
+  &__footer {
+    background-color: $mid-gray;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0 0 0.22rem 0.22rem;
+  }
+}

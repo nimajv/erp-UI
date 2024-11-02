@@ -1,0 +1,28 @@
+.post-document-fail {
+  p {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .MuiListItem-root {
+    padding-left: 0;
+  }
+
+  ::marker {
+    color: $danger500;
+    font-weight: bold;
+  }
+
+  &__errors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+.swal2-html-container:has(.post-document-fail){
+    margin-top: 0;
+}
